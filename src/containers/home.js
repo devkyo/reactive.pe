@@ -6,18 +6,27 @@ import styled from 'styled-components'
 
 const MainTitle = styled.div`
   text-align: center;
-  font-weight:bolder;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  margin: 40px 0;
 `
+const Title = styled.h1`
+  font-size: 90px!important;
+  font-family: Reactive;
+  font-weight: 700;
+  text-align: center;
 
-const mainh1 = {
-  fontSize: '96px',
-  fontWeight: 'bold'
+`
+const MainSubTitle = styled.h4`
+  font-weight: 400;
+  font-family: Roboto;
+  text-align: center;
+  opacity: .8;
+` 
 
-}
+
+
 
 
 const home = () => {
@@ -25,8 +34,10 @@ const home = () => {
    <Layout>
       <div className="container">
         <MainTitle>
-          <h1 style={{fontSize: '96px',fontWeight: 'bold'}}>We create digital products that <span style={{ opacity: '0.9' }}>Work</span></h1>
+          <Title>Creamos productos digitales que <span className="main-title-span">funcionan</span></Title>
         </MainTitle>
+        <MainSubTitle>Somos una agencia digital de Lima que ayuda a usuarios y empresas a alcanzar sus objetivos diseñando y construyendo productos digitales significativos y experiencias interactivas.</MainSubTitle>
+
         
       </div>
    </Layout>

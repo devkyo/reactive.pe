@@ -1,0 +1,64 @@
+@import 'fonts';
+
+$background : #000;
+
+body, html {
+  background: #000;
+  font-family: Reactive;
+  // font-size: 16px;
+  color: #fff;
+  height: 100%;
+  // overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Reactive;
+  font-weight: 700;
+}
+
+
+.navbar{
+  font-weight: bold;
+  padding: 40px 0;
+  font-family: "Gilroy", Helvetica, sans-serif;
+  .nav-item {
+    padding: 0 .5rem;
+  }
+  .navbar-nav {
+
+    .nav-link {
+      transition: color 200ms;
+      padding: 0;
+      padding-bottom: 8px;
+      &:hover {
+     
+        color: #fff!important;
+      }
+    }
+  }
+}
+.navbar-brand img {
+  width: 100%;
+  max-width: 120px;
+}
+
+.active-nav{
+  color: #fff!important;
+  border-bottom: 2px solid #fff;
+}
+
+.main-title-span {
+  background-image: linear-gradient(45deg, #3059e0, #1cb958);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+
+
+.maineffect {
+  // animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: .3s; /* don't forget to set a duration! */
+}

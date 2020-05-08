@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-
 import Router from './router/router'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'animate.css'
+import '../src/assets/styles/app.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
     <Router/>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA

@@ -10,6 +10,7 @@ import {
 
 import Home from '../containers/home'
 import About from '../containers/about'
+import Services from '../containers/services'
 import Projects from '../containers/projects'
 import Contact from '../containers/contact'
 
@@ -20,9 +21,10 @@ const router = () =>{
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
+        <Route exact path='/team' component={About} />
+        <Route exact path='/services' component={Services} />
         <Route exact path='/projects' component={Projects} />
-        <Route exact path='/projects' component={Contact} />
+        <Route exact path='/contact' component={Contact} />
         <Route path="/*">
           <NoMatch />
         </Route>
