@@ -2,10 +2,7 @@ import React from 'react';
 import {
   BrowserRouter,
   Route,
-  Link,
   Switch,
-  Redirect,
-  useLocation,
 } from "react-router-dom";
 
 import Home from '../containers/home'

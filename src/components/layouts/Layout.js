@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../header/Header'
 
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 
 // fonts 
@@ -18,7 +18,7 @@ const Layout = ({children}) => {
     <Main>
 
       <Header/>
-      <div className="container animate__animated animate__fadeInUp" style={{ animationDuration: '.3s' }}>
+      <div className="animate__animated animate__fadeInUp" style={{ animationDuration: '.3s' }}>
         { children }
       </div>
     </Main>

@@ -1,64 +1,103 @@
+// modules css
 @import 'fonts';
+@import 'header';
+@import 'menu';
+@import 'main';
 
-$background : #000;
-
-body, html {
-  background: #000;
-  font-family: Reactive;
-  // font-size: 16px;
-  color: #fff;
-  height: 100%;
-  // overflow: hidden;
+:root {
+  --black: #000000;
+  --white: #fff;
+  --wrapperSpace: 1.5em;
+  
+}
+body {
+  font-family: 'Reactive', sans-serif;
+  margin: 0;
+  color: var(--white);
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: Reactive;
-  font-weight: 700;
-}
 
-
-.navbar{
-  font-weight: bold;
-  padding: 40px 0;
-  font-family: "Gilroy", Helvetica, sans-serif;
-  .nav-item {
-    padding: 0 .5rem;
+.card {
+  width: 100%;
+  &__grid {
+    display: grid;
+    // grid-template-columns: 1fr;
+    grid-gap: 15px;
+    // grid-auto-rows: 534px ;
   }
-  .navbar-nav {
+  &__item {
+    background: red;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 32px;
+  }
+  &__url {
+    margin: 0;
+    opacity: .72;
+    font-size: 14px;
+  }
+  &__title {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 27px;
+  }
+  &__img {
+    width: 180%;
+  }
 
-    .nav-link {
-      transition: color 200ms;
-      padding: 0;
-      padding-bottom: 8px;
-      &:hover {
-     
-        color: #fff!important;
-      }
+  .haywardflight{
+    background: #1E3B7E;
+    .card__img {
+      transform: translateX(-18%);
     }
   }
-}
-.navbar-brand img {
-  width: 100%;
-  max-width: 120px;
-}
+  .hosthinks {
+    background: #0083FF;
 
-.active-nav{
-  color: #fff!important;
-  border-bottom: 2px solid #fff;
-}
+    .card__img {
+      transform: translateX(-50%);
+    }
+  }
 
-.main-title-span {
-  background-image: linear-gradient(45deg, #3059e0, #1cb958);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
+  @media screen and (min-width: 768px){
+    &__title {
+      font-size: 31px;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      grid-auto-rows: 534px ;
+    }
+    &__img {
+      width: 120%;
+    }
 
-
-
-
-.maineffect {
-  // animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: .3s; /* don't forget to set a duration! */
+    .haywardflight{
+      background: #1E3B7E;
+      .card__img {
+        width: 150%;
+        transform: translateX(-10%);
+      }
+    }
+    .hosthinks {
+      background: #0083FF;
+  
+      .card__img {
+        transform: translateX(-40%);
+        width: 101%;
+      }
+    }
+    
+  } 
 }
