@@ -1,6 +1,7 @@
 .navigation {
   width: 100%;
   display: none;
+  list-style: none;
   color: var(--white);
   border: 1px solid red;
   justify-content: center;
@@ -27,6 +28,21 @@
       height: 1px;
       display: block;
       background-color: var(--white);
+    }
+  }
+
+  &__checkbox {
+
+    &:checked {
+      & ~ .navigation {
+        display: block;
+        position: absolute;
+        top: 100%;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        
+      }
     }
   }
 

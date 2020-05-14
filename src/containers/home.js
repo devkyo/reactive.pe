@@ -31,6 +31,16 @@ const home = () => {
               <h2 className="card__title">We make it happen, plan your trip today!</h2>
               <img className="card__img" src={hosthinks} alt=""/>
             </div>
+            <div className="card__item haywardflight">
+              <h3 className="card__url">HAYWARDFLIGHT.COM</h3>
+              <h2 className="card__title">We make it happen, plan your trip today!</h2>
+              <img className="card__img" src={haywardflight} alt=""/>
+            </div>
+            <div className="card__item hosthinks">
+              <h3 className="card__url">HOSTHINKS.COM</h3>
+              <h2 className="card__title">We make it happen, plan your trip today!</h2>
+              <img className="card__img" src={hosthinks} alt=""/>
+            </div>
           </div>
          
         </section>
