@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/layouts/Layout'
-import styled from 'styled-components'
+
 
 import  haywardflight from '../../src/assets/images/haywardflight.png';
 import  hosthinks from '../../src/assets/images/hosthinks.png';
@@ -28,7 +28,7 @@ const home = () => {
             </div>
             <div className="card__item hosthinks">
               <h3 className="card__url">HOSTHINKS.COM</h3>
-              <h2 className="card__title">We make it happen, plan your trip today!</h2>
+              <h2 className="card__title">Elije tu dominio perfecto en Hosthinks!</h2>
               <img className="card__img" src={hosthinks} alt=""/>
             </div>
             <div className="card__item haywardflight">

@@ -12,6 +12,7 @@ import styled from 'styled-components'
 const Main = styled.div `
   height: auto;
   display: block;
+  margin-top: 63px;
 `
 const Layout = ({children}) => {
   return(

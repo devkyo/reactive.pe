@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 // assets 
 import brandReactive  from '../../assets/images/reactive.svg'
 
@@ -8,9 +8,9 @@ const navbar = () => {
     <header className="header">
       <div className="wrapper">
         <div className="header__content">
-          <img src={brandReactive} alt="" className="header__logo"/>
+          <Link to='/'><img src={brandReactive} alt="" className="header__logo"/></Link>
           <input type="checkbox" id="menu" className="navigation__checkbox"/>
-          <ul className="navigation">
+          <ul className="navigation animate__animated animate__fadeIn">
             <li className="navigation__item">
               <NavLink to="/services">Equipo</NavLink>
             </li>

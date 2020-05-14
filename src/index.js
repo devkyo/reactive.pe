@@ -6,7 +6,7 @@ import Router from './router/router'
 // import $ from 'jquery';
 // import Popper from 'popper.js';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
-// import 'animate.css'
+import 'animate.css'
 import '../src/assets/styles/app.scss';
 
 ReactDOM.render(
